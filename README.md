@@ -7,3 +7,58 @@ https://microbiome.github.io/OMA/docs/devel/pages/session_info.html#sec-docker-i
 Additionally, users should install any remaining R packages listed at the beginning of the script if they are not already installed.
 
 2. The data on which the analysis is performed can be found in this repository "biom.Rdata".
+# TreeSE_Cox_Performance_Analysis
+
+This repository implements Cox proportional hazards survival models on multiple data transformations stored within a single `TreeSummarizedExperiment` object, including associated `alternativeExperiment` representations.  
+The objective is to systematically evaluate how different microbiome data transformations influence survival model performance.
+
+Model performance is assessed using the concordance index (C-index), enabling direct and structured comparison across transformations within a unified analytical framework.
+
+---
+
+## Project Context
+
+Master’s Program: Molecular Biology and Genetics
+University: University of Pavia
+Master’s Thesis Research Location: Turku Data Science Group, Turku, Finland
+Supervisor: Leo Lahti
+Degree Level: Master’s Thesis
+
+---
+
+## Data Description
+
+- **Data Type:** Survival data from a microbiome study  
+- **Source:** Public dataset  
+- **Data File:** `biom.Rdata` (included in this repository)  
+- **Data Structure:**  
+  - Stored as a `TreeSummarizedExperiment` object  
+  - Includes multiple transformed representations via `alternativeExperiment`
+
+No additional data preprocessing is required beyond what is implemented in the analysis scripts.
+
+---
+
+## Methods
+
+- **Statistical Model:** Cox Proportional Hazards Model  
+- **Evaluation Metric:** Harrell's Concordance Index (C-index)  
+- **Analysis Goal:**  
+  To quantify and compare survival model performance across different statistical transformations of the microbiome abundance table while maintaining a consistent experimental design.
+
+The analysis ensures that all transformations are evaluated under the same model and evaluation conditions.
+
+---
+
+## Software & Environment
+
+- **Programming Language:** R  
+- **IDE:** RStudio  
+
+### Reproducibility via Docker
+To facilitate reproducibility, this project relies on a Docker image that includes many of the required dependencies.
+
+Instructions for installing and running the Docker image can be found here:  
+https://microbiome.github.io/OMA/docs/devel/pages/session_info.html#sec-docker-image
+
+Using the provided Docker environment is **strongly recommended**.
