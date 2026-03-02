@@ -58,7 +58,4 @@ The analysis ensures that all transformations are evaluated under the same model
 ### Reproducibility via Docker
 To facilitate reproducibility, this project relies on a Docker image that includes many of the required dependencies.
 
-Instructions for installing and running the Docker image can be found here:  
-https://microbiome.github.io/OMA/docs/devel/pages/session_info.html#sec-docker-image
-
-Using the provided Docker environment is **strongly recommended**.
+Install Required Packages To facilitate reproducibility, this project relies on a Docker image that includes many of the required dependencies. Instructions for installing and running the Docker image can be found here: https://microbiome.github.io/OMA/docs/devel/pages/session_info.html
