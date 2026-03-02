@@ -49,4 +49,4 @@ The analysis ensures that all transformations are evaluated under the same model
 
 --
 Results of the analysis:
-https://github.com/AliHajj20/TreeSE_Cox_Performance_Analysis/blob/8fe7e9f4fbc4511af4536b92316cd482ee72f9f6/model_performance.png
+![image](https://github.com/AliHajj20/TreeSE_Cox_Performance_Analysis/blob/8fe7e9f4fbc4511af4536b92316cd482ee72f9f6/model_performance.png)
