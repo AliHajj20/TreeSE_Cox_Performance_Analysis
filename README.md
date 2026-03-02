@@ -50,3 +50,8 @@ The analysis ensures that all transformations are evaluated under the same model
 --
 Results of the analysis:
 ![image](https://github.com/AliHajj20/TreeSE_Cox_Performance_Analysis/blob/8fe7e9f4fbc4511af4536b92316cd482ee72f9f6/model_performance.png)
+This plot shows the C-index values for a Cox proportional hazards model when implemented on the abundance table of data transformations (Counts, CLR, Relative Abundance, and all pair log raio).
+All the transformations are stored within a single TreeSummarizedExperiment data structure.
+The All Pair Wise Log Ratio (APLR) has different dimensions compared to the other transformations; for that purpose, AlternativeExperiment was used to store the APLR statistical transformation format.
+For more information regarding TreeSummarizedExperiment and AlternativeExperiment, check the following link:
+https://microbiome.github.io/OMA/docs/devel/pages/containers.html
