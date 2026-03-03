@@ -53,5 +53,7 @@ Results of the analysis:
 This plot shows the C-index values for a Cox proportional hazards model when implemented on the abundance table of data transformations (Counts, CLR, Relative Abundance, and all pair log raio).
 All the transformations are stored within a single TreeSummarizedExperiment data structure.
 The All Pair Wise Log Ratio (APLR) has different dimensions compared to the other transformations; for that purpose, AlternativeExperiment was used to store the APLR statistical transformation format.
+
+Comparable C-index values across the different transformations indicate that the Cox models achieve similar predictive performance.
 For more information regarding TreeSummarizedExperiment and AlternativeExperiment, check the following link:
 https://microbiome.github.io/OMA/docs/devel/pages/containers.html
